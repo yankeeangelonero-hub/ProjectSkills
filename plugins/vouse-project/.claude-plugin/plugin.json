@@ -1,0 +1,8 @@
+{
+  "name": "vouse-project",
+  "description": "Project lifecycle management on a fixed artefact set (MAP / LEDGER / LAW / CLAUDE.md / record / work / issues / skills): set a project up with the one-time /vouse-project:init command (fresh or already in progress), open and close versions and campaigns, route change requests, record frozen findings, capture portable project knowhow as tracked skills, and track known bugs. Bundles bob-write, the required writing register.",
+  "version": "0.4.0",
+  "author": {
+    "name": "Yanjie Shi"
+  }
+}

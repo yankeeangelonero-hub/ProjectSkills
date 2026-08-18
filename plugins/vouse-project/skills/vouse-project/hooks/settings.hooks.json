@@ -1,0 +1,16 @@
+{
+  "_comment": "Merge the `hooks` key into the project's .claude/settings.json (adjust the path to wherever the skill's hooks/ dir lives in your project). Verify liveness after wiring: attempt an edit to an existing record/ file and confirm the guard_record BLOCKED line appears. Nothing is claimed that isn't wired.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/hooks/guard_record.py"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "name": "project-skills",
-  "description": "Project-work skills: vouse-pm recalls from and captures into a local PM-continuity tree (project status, timelines, correspondence, meeting minutes, schedules, weekly plans, handoffs); bob-write is the specification register those notes are written in.",
-  "version": "0.2.0",
-  "author": {
-    "name": "Yanjie Shi"
-  }
-}

@@ -1,0 +1,5 @@
+#!/bin/sh
+# Git post-commit hook: keep MAP.md's state table derived, never stale.
+# Install: copy to .git/hooks/post-commit and make executable.
+# One visible line per run — a silent gate is an unverifiable gate.
+python scripts/regen_map.py . || echo "post-commit: regen_map FAILED" >&2
