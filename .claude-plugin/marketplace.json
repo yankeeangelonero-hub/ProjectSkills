@@ -1,0 +1,16 @@
+{
+  "name": "project-skills",
+  "owner": {
+    "name": "Yanjie Shi"
+  },
+  "metadata": {
+    "description": "Project-work skills: the vouse-pm PM-continuity workflow and the bob-write specification register it writes in."
+  },
+  "plugins": [
+    {
+      "name": "project-skills",
+      "source": "./plugins/project-skills",
+      "description": "PM continuity on the REDACTED PM/ tree (vouse-pm), plus bob-write, the specification register its notes are written in."
+    }
+  ]
+}
