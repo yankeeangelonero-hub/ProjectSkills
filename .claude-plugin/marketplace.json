@@ -10,7 +10,7 @@
     {
       "name": "project-skills",
       "source": "./plugins/project-skills",
-      "description": "PM continuity on the REDACTED PM/ tree (vouse-pm), plus bob-write, the specification register its notes are written in."
+      "description": "PM continuity on a local PM tree (vouse-pm), plus bob-write, the specification register its notes are written in."
     }
   ]
 }

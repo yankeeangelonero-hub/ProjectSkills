@@ -188,7 +188,7 @@ tags: [memory/projects, globex-route-planner, decision]
 
 ## type: project_weekly_plan
 
-Filename `PM/Weekly Plans/<YYYY-Www>.md` (ISO week, e.g. `2026-W24.md`).
+Filename `Weekly Plans/<YYYY-Www>.md` (ISO week, e.g. `2026-W24.md`).
 
 ```yaml
 ---
@@ -208,9 +208,9 @@ tags: [memory/projects, weekly-plan]
 - **<Project>:** <what to push this week>
 ```
 
-## type: project_management_index  (PM/README.md)
+## type: project_management_index  (the PM root's README.md)
 
-The `PM/README.md` is itself a `project_management_index` note — the front door
+The `the PM root's README.md` is itself a `project_management_index` note — the front door
 listing live projects and the folder shape. See `pm-contracts.md` for the body.
 
 ```yaml

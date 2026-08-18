@@ -8,7 +8,7 @@ exposes one plugin, `project-skills`, under `plugins/project-skills/`.
 
 | Skill | What it does |
 |---|---|
-| [`vouse-pm`](plugins/project-skills/skills/vouse-pm/) | Recall from / capture into the PM-continuity layer (`PM/` tree) of the REDACTED — project status, timelines, correspondence, meeting minutes, schedules, weekly plans, handoffs. |
+| [`vouse-pm`](plugins/project-skills/skills/vouse-pm/) | Recall from / capture into a local PM-continuity tree — project status, timelines, correspondence, meeting minutes, schedules, weekly plans, handoffs. The tree's location is resolved per machine, never hardcoded. |
 | [`bob-write`](plugins/project-skills/skills/bob-write/) | Write prose in "bob" — a flat, declarative engineering-specification register (condition-first, one term per concept, no marketing language). Bundled because `vouse-pm` writes its notes in it, so this plugin works on a machine with nothing else installed. |
 
 ## Installing

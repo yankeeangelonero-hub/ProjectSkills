@@ -7,7 +7,7 @@ capture updates Status Notes in the same change.
 ## The hierarchy
 
 ```
-REDACTED/PM/
+the PM tree
 ├── README.md                 # type: project_management_index — the front door
 ├── Weekly Plans/             # cross-project, ISO-week files (YYYY-Www.md)
 │   └── 2026-W24.md
@@ -37,11 +37,11 @@ zone's index per project **is** `Status Notes.md`. Its dated running log under
 3. Refresh `updated:` on both the artifact and Status Notes.
 4. Confirm the artifact path and the Status Notes line you added.
 
-If you cannot append in place (Drive-mode fallback), create the artifact and
-**explicitly flag** that the Status Notes append is still owed from a local
-session — do not silently skip it.
+The append is never optional. The tree is local, so an in-place edit is
+always available; a capture that skips the Status Notes line is an incomplete
+capture, not a deferred one.
 
-## PM/README.md — the index body
+## the PM root's README.md — the index body
 
 Frontmatter is `type: project_management_index` (see `pm-note-schema.md`). The
 body states scope and lists live projects:
@@ -49,7 +49,7 @@ body states scope and lists live projects:
 ```markdown
 # Project Management Notes
 
-The PM-continuity layer of REDACTED. Canonical as of 2026-06-30; supersedes the
+The PM-continuity layer of the PM tree. Canonical as of 2026-06-30; supersedes the
 retired `Projects/` tombstone and the legacy `Memory System/Projects/` tree.
 
 Use this area for human/project-management continuity: timelines,
@@ -61,7 +61,7 @@ technical specs here — technical truth stays repo-local.
 
 | Project | Front door | What it is |
 |---|---|---|
-| **Acme Cargo Dashboard** | [Acme Cargo Dashboard/Status Notes.md](REDACTED%20Cargo%20Dash%20Web%20Port/Status%20Notes.md) | One-line description. |
+| **Acme Cargo Dashboard** | [Acme Cargo Dashboard/Status Notes.md](Acme%20Cargo%20Dashboard/Status%20Notes.md) | One-line description. |
 
 ## Cross-project
 
@@ -101,7 +101,7 @@ the target is encoded.
 2. Create `Status Notes.md` (frontmatter per schema; the standing sections; an
    opening dated log bullet).
 3. Add any first artifacts (Timeline, kickoff meeting notes, etc.).
-4. Add a row for the project to `PM/README.md` `## Projects`, pointing at the new
+4. Add a row for the project to `the PM root's README.md` `## Projects`, pointing at the new
    `Status Notes.md`.
 5. Confirm all paths and rows.
 
@@ -110,11 +110,11 @@ place with a real `Status Notes.md`.
 
 ## Procedure — archiving a project
 
-1. Move (or in Drive mode, copy then flag for local move) the project folder into
-   `PM/archive/`, optionally suffixing the reason/date
+1. Move the project folder into `archive/` under the PM root, optionally
+   suffixing the reason/date
    (e.g. `… - duplicate archived 2026-06-16`).
 2. Set `status: archived` in its `Status Notes.md` frontmatter.
-3. Remove or strike its row from `PM/README.md` `## Projects`.
+3. Remove or strike its row from `the PM root's README.md` `## Projects`.
 
 ## Verify after writing
 
